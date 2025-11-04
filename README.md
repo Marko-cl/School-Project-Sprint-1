@@ -1,1 +1,0 @@
-# School-Project-Sprint-1
