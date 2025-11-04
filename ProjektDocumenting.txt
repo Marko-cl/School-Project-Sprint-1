@@ -45,7 +45,7 @@ Ne Sprint 1, fokusi eshte ne krijimin e strukturave bazike te klasave:
 
 ## 4. UML Class Diagram
 
-
+![Image Alt](https://github.com/user-attachments/assets/c8f968c8-030c-4dc5-8bb1-f2fb0c90bbcd)
 
 
 
@@ -67,4 +67,5 @@ Ne kete sprint fokusi ishte:
 2. Menaxhimi i disa objektve `Ticket` dhe `Customer`.
 3. Lidhja e tyre ne `Reservation`.
 4. Shfaqja e te dhenave ne console.
+
 
