@@ -1,0 +1,70 @@
+# Sistemi i Kinemase
+
+### Sprint 1 – Dokumentacioni i Projektit
+
+**Ekipi:** Markelo Qosja, Frenkli Xhelo, Viktor Bardhi
+**Data:** 4 Nentor 2025
+
+---
+
+## 1. Qellimi i Projektit
+
+Ky projekt synon te krijoje nje sistem te thjeshte per menaxhimin e rezervimeve ne kinema duke perdorur konceptet baze te Programimit te Orientuar nga Objekti (OOP) ne Java.
+
+Sistemi lejon qe customer-et te bejne rezervime per filma, te gjenerohen ticket-et perkatese dhe te ruhet informacioni i tyre duke perdorur koleksione (`ArrayList`).
+
+Ne Sprint 1, fokusi eshte ne krijimin e strukturave bazike te klasave:
+
+* **Ticket** – perfaqeson nje ticket te vetme.
+* **Customer** – perfaqeson personin qe ben rezervimin.
+* **Reservation** – lidh nje customer me nje ose me shume tickets.
+
+
+## 2. Funksionalitetet Kryesore
+
+* Krijimi i nje **Customer** me emer, moshe, email, telefon dhe ID unike.
+* Krijimi i nje **Ticket** qe permban titullin e filmit, oren e shfaqjes, cmimin, daten dhe vendin ne salle.
+* Krijimi i nje **Reservation** qe permban reservationID, daten e rezervimit dhe qe lidhet direkt
+  me nje customer si atribut dhe nje liste ticket-esh.
+* Kontrolli i disponueshmerise se ticket-it (`available`).
+* Shfaqja e informacionit te customer-it dhe ticket-it brenda reservation-it.
+* Ruajtja e disa reservation-eve ne nje **liste (`ArrayList`)** dhe shfaqja e tyre.
+* Klasa **BookingManager** (Main) përdor ArrayList<Reservation> për të ruajtur dhe menaxhuar të gjithë grupin e prenotimeve të sistemit.
+
+
+## 3. Pershkrimi i Kerkesave
+
+| **Veprimi i Perdoruesit**   | **Sjellja e Sistemit**                                                                 | **Klasat e Perdorura**        |
+| --------------------------- |----------------------------------------------------------------------------------------| ----------------------------- |
+| Nje customer futet ne sistem| Krijon objekt `Customer` me te dhena bazike                                            | Customer                      |
+| Krijon nje ticket te re     | Krijon objekt `Ticket` me titull, ore, cmim, vend dhe date                             | Ticket                        |
+| Ben nje reservation         | Krijon objekt `Reservation` qe lidhet me nje `Customer` dhe ruan nje liste `Ticket`    | Reservation, Customer, Ticket |
+| Shton ticket ne reservation | Metoda `setTicket()` lidhe nje `Ticket` me customer                                    | Customer, Ticket              |
+| Shfaq detajet e reservation | Metoda `printReservation()` tregon te gjitha ticket-et dhe informacionin e customer-it | Reservation, Customer, Ticket |
+
+
+## 4. UML Class Diagram
+
+
+
+
+
+
+## 5. Koncepte OOP te Demonstruara
+
+* **Encapsulation:** Atributet jane private dhe aksesohen me get/set.
+* **Composition:** `Reservation` ka nje `Customer`, dhe `Customer` ka nje `Ticket`.
+* **Collections:** `ArrayList` perdoret ne `BookingManager` per te ruajtur rezervimet.
+* **Object Interaction:** `BookingManager` bashkon `Reservation`, `Customer`, dhe `Ticket` per te shfaqur te gjitha rezervimet.
+
+
+
+## 6. Pershkrim i Sprint 1
+
+Ne kete sprint fokusi ishte:
+
+1. Krijimi i klasave baze.
+2. Menaxhimi i disa objektve `Ticket` dhe `Customer`.
+3. Lidhja e tyre ne `Reservation`.
+4. Shfaqja e te dhenave ne console.
+
